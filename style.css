@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", sans-serif;
+  font-size: 1.000rem;
+  color: #EFECE9;
+  background-color: #3C5759;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+header {
+  background-color: #192524;
+  text-align: center;
+  font-size: 1rem;
+  color: #EFECE9;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+div {
+  display: inline-flex;
+}
+
+footer {
+  background-color: #192524;
+  text-align: center;
+  font-size: 1rem;
+  color: #EFECE9;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  html, body {
+    font-size: 22px;
+  }
+}
+
+  .icon {
+    width: 20%;
+    height: auto;
+    min-width: 25px;
+  }
+
+h1 {
+  font-size: 1.5rem;
+}
+
+grid {
+
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 
+    1fr 1fr 1fr;
+    text-align: center;
+}
+
+#submit{
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 
+    1fr 1fr;
+    text-align: center;
+}
+
+
+h2 {
+  font-size: 1.250rem;
+}
+
+
+
+.td {
+  background-color: #D0D5CE;
+  color: #192524;
+}
+
+#menuSelect :hover {background-color: #192524; color: #D0D5CE; }
+
+.menuSelect {
+  color: #D0D5CE;
+  text-decoration: none;
+  width: 100%;
+}
+
+table {
+  margin-left: auto;
+  margin-right:auto;
+}
+
+a.menuSelect {
+text-align: center;
+}
+
+.footerSelect {
+  color: #D0D5CE;
+  text-decoration: none;
+}
+
+
+
+p {
+  font-size: 1rem;
+}
+
+input {
+  font-family: Georgia, 'Times New Roman', sans-serif;
+  font-size: 1rem;
+}
+
+select {
+  font-family: Georgia, 'Times New Roman', sans-serif;
+  font-size: 1rem;
+}
+
+.centre {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+}
+
+button {
+  font-family: Georgia, 'Times New Roman', sans-serif;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #D1EBDB;
+}

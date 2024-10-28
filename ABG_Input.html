@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>ABG Generator</title>
+</head>
+    <body><header>
+        <br>
+        <h1>ClinEdTools &#x03B2;</h1>
+        <hr><br>
+    </header>
+        <main>
+            <section class="abgForm"></section>
+                <form id="abgForm">
+                    <h2 style="text-align: center;">ABG Generator</h2>
+                    <hr>
+                    <br>
+                    <table>
+                    <!--Patient ID Input-->
+                    <tr>
+                       <td><label for="patientID"><p>Patient ID:</p></label></td>
+                        <td><input id="patientID" placeholder="ID"></td>                
+                    <!--Patient Name Input-->
+                    </tr>
+                    <tr>
+                        <td><label for="patient"><p>Patient Name:</p></label></td>
+                        <td><input id="patient" placeholder="P. Atient"></td>
+                    </td>              
+                    <!--DOB Input-->
+                    <tr>
+                        <td><label for="DOB"><p>Date of Birth:</p></label></td>
+                        <td><input id="DOB" placeholder="xx/xx/yyyy"></td>
+                    </tr>
+                    <!--Temp Input-->
+                    <tr>
+                        <td><label for="temp"><p>Temperture: </p></td>
+                        <td><input id="temp" placeholder="37.0"></td>
+                        <td><p><sup>o</sup>C</p></td>
+                    </tr>
+                    <!--FiO2 Input-->
+                    <tr>
+                        <td><label for="fio2"><p>FiO2:</p></label></td>
+                        <td><input id="fio2" placeholder="0.21"></td>
+                    </tr>
+
+                    <!--Unit Input-->
+                    <tr>
+                        <td><label for="unit"><p>Units for Gases:</p></label></td>
+                        <td><select name="unit" id="unit">
+                        <option value="kPa">kPa</option>
+                        <option value="mmHg">mmHg</option>
+                        </select></td>
+                    </tr>
+
+                    <TH COLSPAN=2><hr></TH>
+                    <tr>
+                        <td COLSPAN=2><a href=""><button id="normal" style="width: 100%;">Generate Normal ABG Reading</button></a></td>
+                    </tr>
+                    <TH COLSPAN=2><hr></TH>                    
+                    <!--Source Input-->
+                    <tr>
+                        <td><label for="source"><p>Source:</p></label></td>
+                        <td><select name="source" id="source">
+                        <option value="metabolic">Metabolic</option>
+                        <option value="respiratory">Respiratory</option>
+                        </select></td>
+                    </tr>
+                    <!--Balance Input-->
+                    <tr>
+                        <td><label for="balance"><p>Balance:</p></label></td>
+                        <td><select name="balance" id="balance">
+                        <option value="acidotic">Acidotic</option>
+                        <option value="alkalotic">Alkalotic</option>
+                        </select></td>
+                    </tr>
+                    <!--Compensating Input-->
+                    <tr>
+                        <td><label for="compensating"><p>Compensating:</p></label></td>
+                        <td><select name="compensating" id="compensating">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                        <option value="part">Partial</option>
+                        </select></td>
+                    </tr>                
+                    <!--Hypoxic Input-->
+                    <tr>
+                        <td><label for="hypoxic"><p><sup>*</sup>Hypoxic:</p></label></td>
+                        <td><select name="hypoxic" id="hypoxic">
+                        <option value="no">No</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                        </select></td>
+                        <td><p><sup>*</sup>inspite of any O<sub>2</sub> application</td>
+                    </tr>
+                    <!--Glucose-->
+                    <tr>
+                        <td><label for="glucose"><p>Glucose:</p></label></td>
+                        <td><select name="glucose" id="glucose">
+                        <option value="normal">Normal</option>
+                        <option value="moderate low">Moderate Low</option>
+                        <option value="severe low">Severe Low</option>
+                        <option value="moderate high">Moderate High</option>
+                        <option value="severe high">Severe High</option>
+                        </select></td>
+                    </tr>
+                    <!--Lactate-->
+                    <tr>
+                        <td><label for="lactate"><p>Lactate:</p></label></td>
+                        <td><select name="lactate" id="lactate">
+                        <option value="normal">Normal</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">High</option>
+                        </select></td>
+                    </tr>                   
+                    <TH COLSPAN=2><hr></TH>
+                    <tr>
+                        <td COLSPAN=2><a href=""><button id="abnormal" style="width: 100%">Generate Abnormal ABG Reading</button></a></td>
+                    </tr>
+                    <TH COLSPAN=2><hr></TH>                     
+                </table>
+                <br>                  
+                <br>
+            </form>
+            </section>                  
+        </main>  
+        <footer>
+            <br>
+            <p><a href="about.html" class="footerSelect">About</a></p>
+            <p><a href="contact.html" class="footerSelect">Contact</a></p>
+            <br>
+            <p>Copyright &copy; ClinEdTools</p>
+            <br>
+        </footer>
+            <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
